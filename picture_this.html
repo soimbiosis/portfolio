@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kira Mathias-Prabhu | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/skippr.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Kira Mathias-Prabhu | Portfolio</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Portfolio</a></li>
+							<li><a href="generic.html">About Me</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>PictureThis</h1>
+							<h4>Solo Term Project for 15-112: Fundamentals of Programming</h4>
+							<div style="display:inline-block; margin-top:3em; margin-bottom:3em;">
+								<div class="left_container">
+									<div class="theTarget" style="height:400px;width:400px;">
+										<div style="background-image: url(images/picture_this/night_before_xmas_collage.png)"></div>
+										<div style="background-image: url(images/picture_this/churches.jpg)"></div>
+										<div style="background-image: url(images/picture_this/iraq_article_collage.png)"></div>
+									</div>
+								</div>
+								<div class="right_container">
+									<h3>In Brief</h2>
+									<p><i>PictureThis</i>  takes a text file and builds a photo collage that represents it. This is achieved by querying the Flickr photo database with each word (that is not in a stopwords list), and placing it in either the background, mid ground, or foreground of a montage based on the frequency with which it appears in the text file. Images in the foreground are larger than images in the mid-ground or background.
+									</p>
+									<p><i>Collages generated for <a href="https://www.poetryfoundation.org/poems/43171/a-visit-from-st-nicholas">A Visit from St. Nicholas</a>, the <a href="https://en.wikipedia.org/wiki/Church_(building)">Wikipedia article about churches</a>, and a New York Times article entitled <a href="https://www.nytimes.com/2014/12/03/world/middleeast/kurd-pact-with-baghdad-against-islamic-state.html">Iraqi Government and Kurds reach Deal to Share Oil Revenues</i></a></p>
+								</div>
+							</div>
+							<h3>Process</h3>
+							<p><b>Step 1: Word Frequency Analysis</b>
+							In State 1, the user is asked to input a path to a text file. This file is then read, iterated through, and each word is added to a dictionary where the key is the word, and the value is its frequency. Every subsequent occurrence of the word adds to the frequency. Words cannot be in the stopwords list, which consists of very common, non-salient words like ‘the’ and ‘which,’ and they also cannot contain special characters. Finally the dictionary is sorted in reverse frequency order and read into a list so that it can be iterated through in order in the next step.</p>
+
+							<p><b>Step 2: Flickr Image Retrieval</b>
+							In State 2, the bulk of the work is done. I loop through the list of words, and for each word query the Flickr API which returns an xml result from which a url can be constructed. The urls are read into a list, which is then iterated through. Each url is downloaded to a file which is stored in a temporary directory, and is assigned to its respective batch and given a position based on its frequency.</p>
+
+							<p><b>Step 3: Creating the Collage</b>
+							The collage consists of three ‘batches,’ which are groups of pyglet sprites. In State 3, the three batches are drawn to the screen, creating a montage. The user has the option to save the collage by pressing ’s’, or create a new collage by pressing ‘r’.</p>
+
+							<h3>Artifacts</h3>
+							<p><b>Demo Video:</b> Watch a live explanation and demo <a href="http://youtu.be/rdt5E9Ro7JQ">here</a> on Youtube. </p>
+							<p><b>Code:</b> <a href="docs/TermProj.zip">TermProj.zip</a>. Note that pyglet has some compatibility issues with later versions of MacOS. I also had compatibility issues with pyglet trying to run this on Ubuntu 18.04.4.</p> 
+						</div>
+					</div>
+
+				<!-- Footer -->
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script src="assets/js/skippr.js"></script>
+			<script>$(document).ready(function() {
+									$(".theTarget").skippr();
+			});</script>
+
+	</body>
+</html>
