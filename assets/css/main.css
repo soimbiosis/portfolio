@@ -343,14 +343,35 @@ input, select, textarea {
 	.resin_container {
 		display:inline-block;
 		width:100%;
-		height:300px;
 		margin-top:5em;
-		margin-bottom:10em;
+		margin-bottom:1em;
 	}
+
 	.left_container {
 		float: left;
 		width:50%;
 	}
+
+	@media screen and (max-width: 600px) {
+		.left_container{
+			width:100%;
+		}
+	}
+
+	.right_container {
+		float:right;
+		width:50%;
+	}
+
+	@media screen and (max-width: 600px) {
+		.right_container{
+			width:100%;
+			float:left;
+		}
+	}
+
+
+
 	.column_content {
 		margin:5%;
 	}
@@ -360,10 +381,7 @@ input, select, textarea {
 		margin-top:5%;
 		margin-bottom:5%;
 	}
-	.right_container {
-		float:right;
-		width:50%;
-	}
+
 
 
 /* Row */
@@ -2676,6 +2694,7 @@ input, select, textarea {
 					top: 0;
 					left: 0;
 					width: 100%;
+					object-fit:cover;
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
@@ -2729,6 +2748,7 @@ input, select, textarea {
 				left: 0;
 				width: 100%;
 				height: 100%;
+				object-fit:cover;
 				padding: 1em;
 				border-radius: 4px;
 				border-bottom: 0;
