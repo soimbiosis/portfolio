@@ -2417,9 +2417,15 @@ input, select, textarea {
 			font-size:14pt;
 		}
 	}
-	@media screen and (max-width: 680px) {
+	@media screen and (max-width: 900px) {
 		.home_text {
 			font-size:8pt;
+		}
+	}
+
+	@media screen and (max-width: 750px) {
+		.home_text {
+			font-size:6pt;
 		}
 	}
 	.home_background {
