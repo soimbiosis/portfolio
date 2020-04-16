@@ -2955,22 +2955,24 @@ input, select, textarea {
 				}
 
 		}
+		.project_type {
+			
+		}
 
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 3em 0 0.1em 0 ;
 	}
 
 		#header .logo {
 			display: block;
 			border-bottom: 0;
-			color: inherit;
-			font-weight: 900;
-			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
-			text-decoration: none;
-			text-transform: uppercase;
+			color:#fcba03;
+			font-weight: 400;
+			font-family:'Baloo Bhaina 2', cursive;
+			font-size:25pt;
+			padding-bottom:1em;
 			display: inline-block;
 		}
 
