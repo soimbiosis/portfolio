@@ -9,6 +9,7 @@
 		<title>Kira Mathias-Prabhu: Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -17,24 +18,23 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<div class="inner">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Kira Mathias-Prabhu | Portfolio</span>
-								</a>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
 
-						</div>
-					</header>
+				<!-- Main -->
+					<div class="home_background">
+						<img src="images/java.jpg" style="width:100%"></img>
+						<div class="home_text">
+						<h1 style="text-align:center">Hi, I'm Kira</h1>
+						<p>Engineer, creator, explorer, dreamer, doer<br/> <a href="#portfolio" style="color:#fcba03"><i>Soimbiosis</i></a> is my vision for the future. Look around! If you like, I'll <a onclick="playAudio()" style="color:#fcba03">serenade (or stop serenading)</a> you with classical music while you do.</p>
+						<audio src="music/merged.m4a" id="audio"></audio>
+						<h4><a href="generic.html">Bio</a> | <a href="#portfolio">Portfolio</a> | <a href="music.html">Music</a> | <a href="docs/resume2020.pdf">Résumé</a> </h4><br/>
+					</div>
+					</div>
 
+
+					<div id="main">
+				
 				<!-- Menu -->
 					<nav id="menu">
 						<h2>Menu</h2>
@@ -44,12 +44,9 @@
 							<li><a href="docs/resume2020.pdf">Resume</a></li>
 						</ul>
 					</nav>
-
-				<!-- Main -->
-					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>Soimb&middotiosis</h1>
+								<h1 id=portfolio>Soimb&middotiosis</h1>
 								<p style="font-size:18pt;margin-bottom:1em;"><i>/ soi'imbīˈōsəs / &#8226 noun</i></p>
 								<p style="font-size:13.5pt;">								
 								A world where we are more than just consumers. <br/>
@@ -201,7 +198,7 @@
 						<div class="inner">
 								<h2>About Me</h2>
 								<div>
-								<p>I am an engineer, and a creative, on a mission to reduce waste. I received my B.S. in Computer Science from Carnegie Mellon with a minor in Computational Biology. Though it didn't come with a diploma, I also received 15 years of classical music education on the violin and piano, and the simultaneous precision and expressivism that is classical music continues to shape my creative process today. When it comes to design, my philosophy is that: <br />
+								<p>I am an engineer and a creative on a mission to reduce waste. I received my B.S. in Computer Science from Carnegie Mellon with a minor in Computational Biology. Though it didn't come with a diploma, I also received 15 years of classical music education on the violin and piano, and the simultaneous precision and expressivism that is classical music continues to shape my creative process today. When it comes to design, my philosophy is that: <br />
 								1) Every product should have a lifespan, a lifecycle, and a continuous path of evolution. <br/>
 								2) We should manufacture additively. <br/>
 								3) We should be symbiotic members of our natural environment; what we consume we must return in some useful form.<br/>
@@ -221,6 +218,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>function playAudio() { var audio = document.getElementById('audio');
+			if (audio.paused) {audio.play();} else {audio.pause();}}</script>
 
 	</body>
 </html>
