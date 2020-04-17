@@ -24,7 +24,6 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	scroll-behavior:smooth;
 }
 
 
@@ -360,7 +359,7 @@ input, select, textarea {
 		width:50%;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 1000px) {
 		.left_container{
 			width:100%;
 		}
@@ -371,7 +370,7 @@ input, select, textarea {
 		width:50%;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 1000px) {
 		.right_container{
 			width:100%;
 			float:left;
@@ -2956,7 +2955,7 @@ input, select, textarea {
 
 		}
 		.project_type {
-			
+
 		}
 
 /* Header */
