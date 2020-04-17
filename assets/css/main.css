@@ -2448,6 +2448,7 @@ input, select, textarea {
 		.home_background {
 			background-image:url("../../images/java_crop.jpg");
 			background:url("../../images/java_crop.jpg");
+			background-size: 800px, 1280px;
 			background-repeat: no-repeat;
 		}
 	}
