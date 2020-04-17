@@ -2443,13 +2443,14 @@ input, select, textarea {
 		display: block;
 		color: #ffffff;
 		margin-bottom:5em;
-
-		/*position:relative;
-		text-align:center;
-		color:#ffffff;
-		width:100%;
-		min-height:100%;
-		margin-bottom:5em;*/
+	}
+	@media screen and (max-width: 800px) {
+		.home_background {
+			background-image:url("../../images/java_crop.jpg");
+			background:url("../../images/java_crop.jpg");
+			background-size:100%;
+			background-repeat: no-repeat;
+		}
 	}
 
 /* Image */
