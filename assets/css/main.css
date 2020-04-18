@@ -342,11 +342,25 @@ input, select, textarea {
 }
 
 /* Resin */
+	.pillar_small {
+		margin-left:1em;
+		max-height:300px; 
+		margin-top:20px;
+		float:right;
+	}
+	@media screen and (max-width: 800px) {
+		.pillar_small{
+			width:100%;
+			float:left;
+		}
+	}
+
 	.container {
 		display:inline-block;
 		width:100%;
 		margin-bottom:1em;
 	}
+
 	.resin_container {
 		display:inline-block;
 		width:100%;
@@ -367,6 +381,14 @@ input, select, textarea {
 			margin-bottom:3em;
 		}
 	}
+	@media screen and (max-width: 800px) {
+		.left_container{
+			width:96%;
+			margin-left:2%;
+			margin-right:2%;
+			margin-bottom:3em;
+		}
+	}
 
 	.right_container {
 		float:right;
@@ -378,6 +400,15 @@ input, select, textarea {
 			width:80%;
 			margin-left:10%;
 			margin-right:10%;
+			margin-bottom:3em;
+			float:left;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.right_container{
+			width:96%;
+			margin-left:2%;
+			margin-right:2%;
 			margin-bottom:3em;
 			float:left;
 		}
@@ -2453,7 +2484,7 @@ input, select, textarea {
 		.home_background {
 			/*background-size: 800px, 1280px;*/
 			background-image:url("../../images/java_crop.jpg");
-			background-repeat: no-repeat;
+			background-repeat:no-repeat;
 		}
 	}
 
@@ -2725,7 +2756,6 @@ input, select, textarea {
 		flex-wrap: wrap;
 		postiion: relative;
 		width:100%;
-		/*margin: -2.5em 0 0 -2.5em;*/
 	}
 
 		.tiles article {
@@ -2736,6 +2766,7 @@ input, select, textarea {
 			position: relative;
 			width: calc(33.33333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
+								
 		}
 
 			.tiles article > .image {
