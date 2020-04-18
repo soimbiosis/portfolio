@@ -2433,7 +2433,7 @@ input, select, textarea {
 		background:url("../../images/java.jpg");
 		background-position-x: 50%;
 		background-position-y: 50%;
-		background-size:1280px, 1280px;
+		background-size:cover;
 		background-attachment: fixed;
 		position:relative;
 		overflow:hidden;
@@ -2448,7 +2448,6 @@ input, select, textarea {
 		.home_background {
 			background-image:url("../../images/java_crop.jpg");
 			background:url("../../images/java_crop.jpg");
-			background-size: 800px, 1280px;
 			background-repeat: no-repeat;
 		}
 	}
