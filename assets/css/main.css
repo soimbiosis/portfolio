@@ -2482,7 +2482,7 @@ input, select, textarea {
 	}
 	@media screen and (max-width: 800px) {
 		.home_background {
-			background-size: 800px, 1280px;
+			background-size: 700px, 850px;
 			background-image:url("../../images/java_crop.jpg");
 			background:url("../../images/java_crop.jpg");
 			background-repeat:no-repeat;
