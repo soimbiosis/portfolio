@@ -361,7 +361,10 @@ input, select, textarea {
 
 	@media screen and (max-width: 1000px) {
 		.left_container{
-			width:100%;
+			width:80%;
+			margin-left:10%;
+			margin-right:10%;
+			margin-bottom:3em;
 		}
 	}
 
@@ -372,7 +375,10 @@ input, select, textarea {
 
 	@media screen and (max-width: 1000px) {
 		.right_container{
-			width:100%;
+			width:80%;
+			margin-left:10%;
+			margin-right:10%;
+			margin-bottom:3em;
 			float:left;
 		}
 	}
