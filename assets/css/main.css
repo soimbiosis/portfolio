@@ -314,6 +314,14 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+
+.botanyLabel  {
+	color: #4d4c49;
+	font-size: 20px;
+	font-style:italic;
+	margin-top:-5%;
+}
+
 /* Gallery */
 .slider .indicators .indicator-item {
   background-color: #666666;
@@ -2461,9 +2469,18 @@ input, select, textarea {
 	@media screen and (max-width: 750px) {
 		.home_text {
 			font-size:12.5pt;
+			line-height:15pt;
 			width: 70%;
 		}
 	}
+
+	@media screen and (max-width: 750px) {
+		.theTarget {
+			width: 90%;
+			height:400px;
+		}
+	}
+
 
 	.home_background {
 		/*background-image:url("../../images/java.jpg");*/
