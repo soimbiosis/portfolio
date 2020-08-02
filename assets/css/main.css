@@ -152,6 +152,12 @@ input, select, textarea {
 		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
 	}
 
+	@media screen and (max-width: 900px) {
+		a {
+			line-height:30pt;
+		}
+	}
+
 		a:hover {
 			border-bottom-color: transparent;
 			color: #f2849e !important;
@@ -325,6 +331,11 @@ input, select, textarea {
 @media screen and (max-width: 750px) {
 	.botanyLabel {
 		font-size:14px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.botanyLabel {
+		font-size:11.5px;
 	}
 }
 
@@ -2450,6 +2461,7 @@ input, select, textarea {
 	}
 	a {
 		z-index:1;
+		margin-bottom:10px;
 	}
 	.home_text {
 		width: 60%;
@@ -2475,7 +2487,7 @@ input, select, textarea {
 	@media screen and (max-width: 750px) {
 		.home_text {
 			font-size:12.5pt;
-			line-height:15pt;
+			padding-bottom:3em;
 			width: 70%;
 		}
 	}
