@@ -153,7 +153,7 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 900px) {
-		a {
+		.main_menu_links {
 			line-height:30pt;
 		}
 	}
