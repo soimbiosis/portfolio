@@ -322,6 +322,12 @@ input, select, textarea {
 	margin-top:-5%;
 }
 
+@media screen and (max-width: 750px) {
+	.botanyLabel {
+		font-size:14px;
+	}
+}
+
 /* Gallery */
 .slider .indicators .indicator-item {
   background-color: #666666;
@@ -2474,12 +2480,7 @@ input, select, textarea {
 		}
 	}
 
-	@media screen and (max-width: 750px) {
-		.theTarget {
-			width: 90%;
-			height:400px;
-		}
-	}
+
 
 
 	.home_background {
@@ -3514,6 +3515,21 @@ input, select, textarea {
 					}
 
 		}
+
+	@media screen and (min-width: 750px) {
+	#botany_container {
+		background-color:#e3e2de;
+		width:60%;
+		height:700px;
+		}
+	}
+	@media screen and (max-width: 750px) {
+		#botany_container {
+			width: 90%;
+			height:350px;
+		}
+	}
+
 
 /* Wrapper */
 
