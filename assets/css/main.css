@@ -393,6 +393,18 @@ video {
 		}
 	}
 
+	.paintings {
+		display:inline-block;
+
+		margin-top:10%;
+		margin-bottom:10px;
+		margin-left:10%;
+	}
+
+	.painting_im {
+		width:60%;
+	}
+
 	.container {
 		display:inline-block;
 		width:100%;
